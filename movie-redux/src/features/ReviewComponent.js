@@ -20,7 +20,7 @@ const reviews = [
   {
     id: 3,
     name: "Lê Văn C",
-    avatar: "/images/user.jpg",
+    avatar: "/images/user.png",
     comment: "Hơi dài nhưng rất đáng tiền!",
     rating: 4,
   },
