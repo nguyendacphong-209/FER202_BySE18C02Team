@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+/* Ảnh nền cho trang Login */
+.login-page {
+    background: url("https://images.unsplash.com/photo-1721241844238-bf5b0f099bbd?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D") 
+      no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+        font-family: "Poppins", sans-serif !important;
+  }
+  
+  /* Card Login */
+  .login-card {
+    width: 450px; /* Tăng kích thước rộng */
+    background: rgba(255, 255, 255, 0.95); /* Làm nền mờ vừa phải */
+    border-radius: 15px; /* Bo góc mềm hơn */
+    border: none;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3); /* Bóng đổ sắc nét hơn */
+    padding: 30px; /* Tăng padding giúp card thoáng hơn */
+    text-align: center;
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  /* Hiệu ứng mượt */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Tiêu đề */
+  h2 {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Nội dung chính */
+  .content {
+    width: 100%;
+    max-width: 1200px;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Nút login */
+  button {
+    font-size: 16px;
+    padding: 12px;
+    border-radius: 8px;
+  }
+/* Style cho thông báo lỗi */
+.alert-danger {
+    color: #d9534f !important; /* Màu đỏ đậm */
+    font-weight: bold; /* In đậm chữ */
+    font-size: 16px; /* Tăng kích thước chữ */
+    text-align: center;
+    border-radius: 8px; /* Bo tròn viền mềm mại */
+    background: rgba(255, 200, 200, 0.8); /* Nền đỏ nhạt giúp nổi bật */
+    border: 1px solid #d9534f; /* Viền đỏ đậm */
+    padding: 12px; /* Tăng khoảng cách */
+    margin-top: 15px; /* Thêm khoảng cách giữa các phần */
+    box-shadow: 0px 4px 8px rgba(217, 83, 79, 0.3); /* Hiệu ứng bóng */
+    font-family: "Poppins", sans-serif; /* Font chữ đẹp hơn */
+  }
+    

@@ -1,0 +1,43 @@
+.review-section {
+    margin: 30px 0;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 8px;
+    color: white;
+  }
+  
+  .review-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fcb045;
+    margin-bottom: 15px;
+  }
+  
+  .review-item {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .review-item h4 {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  
+  .review-item p {
+    margin: 5px 0;
+  }
+  
+  .review-item p:first-of-type {
+    font-weight: bold;
+    color: #ffcc00;
+  }
+  .review-avatar {
+    width: 50px;   // 👈 Giảm kích thước avatar (có thể chỉnh thành 40px, 60px tùy ý)
+    height: 50px;
+    border-radius: 50%;  // Làm tròn ảnh
+    object-fit: cover;  // Giữ tỷ lệ ảnh mà không bị méo
+  }
+  
+  

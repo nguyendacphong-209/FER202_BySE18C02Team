@@ -1,0 +1,58 @@
+@import "../../common/colors.scss";
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 15px 40px;
+  color: white;
+  font-size: 20px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 24px;
+  text-transform: uppercase;
+  color: #fcb045;
+  transition: 0.3s;
+}
+
+.logo:hover {
+  color: #ff6b6b;
+}
+
+.user-section {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.login-link {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: color 0.3s ease-in-out;
+}
+
+.login-link:hover {
+  color: #fcb045;
+}
+
+.user-image img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid white;
+  transition: transform 0.3s ease-in-out;
+}
+
+.user-image img:hover {
+  transform: scale(1.1);
+}

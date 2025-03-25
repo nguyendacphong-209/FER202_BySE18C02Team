@@ -1,0 +1,133 @@
+.movie-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 40px;
+  color: #fff;
+  background-color: #141414;
+  font-family: Arial, sans-serif;
+
+  .section-left {
+    flex: 1;
+    padding-right: 20px;
+    max-width: 60%;
+
+    .movie-title {
+      font-size: 36px;
+      font-weight: bold;
+      margin-bottom: 20px;
+      color: #e5e5e5;
+    }
+
+    .movie-rating {
+      display: flex;
+      flex-wrap: wrap;
+      font-size: 18px;
+      margin-bottom: 20px;
+
+      span {
+        margin-right: 15px;
+        display: flex;
+        align-items: center;
+
+        i {
+          color: #f5c518;
+          margin-right: 5px;
+        }
+      }
+    }
+
+    .movie-plot {
+      font-size: 16px;
+      line-height: 1.6;
+      margin-bottom: 20px;
+      color: #b3b3b3;
+    }
+
+    .movie-info {
+      display: grid;
+      grid-template-columns: 150px auto;
+      gap: 10px 15px;
+      font-size: 16px;
+      color: #b3b3b3;
+
+      div {
+        span:first-child {
+          font-weight: bold;
+          color: #e5e5e5;
+        }
+
+        span:last-child {
+          color: #ddd;
+        }
+      }
+    }
+  }
+
+  .section-right {
+    flex: 0 1 300px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    max-width: 40%;
+
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.7);
+    }
+  }
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .movie-section {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .section-left {
+    max-width: 100%;
+    padding-right: 0;
+
+    .movie-title {
+      font-size: 28px;
+    }
+
+    .movie-rating {
+      font-size: 16px;
+    }
+
+    .movie-info {
+      grid-template-columns: 1fr 2fr;
+      font-size: 14px;
+    }
+  }
+
+  .section-right {
+    max-width: 100%;
+    margin-top: 20px;
+
+    img {
+      width: 100%;
+    }
+  }
+  //css nut them phim yeu thich
+  .favorite-btn {
+    background-color: #ff4757;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 15px;
+  }
+  
+  .favorite-btn:hover {
+    background-color: #e84118;
+  }
+  
+}

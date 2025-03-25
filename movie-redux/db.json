@@ -1,0 +1,32 @@
+{
+  "UserAccounts": [
+    {
+      "id": 1,
+      "username": "admin",
+      "password": "1234567",
+      "account_type": "admin",
+      "status": "active"
+    },
+    {
+      "id": 2,
+      "username": "jane",
+      "password": "1234567",
+      "account_type": "user",
+      "status": "inactive"
+    },
+    {
+      "id": 3,
+      "username": "alice",
+      "password": "1234567",
+      "account_type": "user",
+      "status": "active"
+    },
+    {
+      "id": 4,
+      "username": "bob",
+      "password": "1234567",
+      "account_type": "guest",
+      "status": "active"
+    }
+  ]
+}

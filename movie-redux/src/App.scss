@@ -1,0 +1,113 @@
+@import "../src/common/colors.scss";
+@import "~bootstrap/scss/bootstrap";
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+h2 {
+  margin: 20px;
+  color: #e5e5e5;
+}
+
+body {
+  background: linear-gradient(-45deg, #d0b2e6a9, #cd9d9dc8, #3a5e7842, #000);
+  background-size: 400% 400%;
+  animation: gradientAnimation 6s ease infinite;
+  min-height: 100vh;
+  font-family: "Open Sans", sans-serif;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
+.container {
+  margin: 0px 40px;
+}
+
+.app {
+  position: relative;
+  min-height: 100vh;
+  margin-top: 90px;
+}
+
+.container {
+  padding-bottom: 72px;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 72px;
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $font-primary;
+}
+
+.category {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: left;
+  padding: 10px 20px;
+  margin-top: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  display: inline-block;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.category::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 4px;
+  background-color: #fcb045;
+  margin-top: 5px;
+  border-radius: 2px;
+}
+
+.card-bottom {
+  background: rgba(0, 0, 0, 0.6); /* Nền bán trong suốt để làm nổi bật chữ */
+  padding: 10px; /* Tạo khoảng cách giữa chữ và biên */
+  border-radius: 0 0 8px 8px; /* Bo góc phần dưới của thẻ */
+  text-align: center; /* Căn giữa văn bản */
+  color: #fff; /* Màu chữ trắng */
+}
+
+.card-info h4 {
+  font-size: 1.2em; /* Tăng kích thước chữ cho tiêu đề */
+  font-weight: bold; /* Đậm chữ tiêu đề */
+  margin: 5px 0; /* Tạo khoảng cách giữa tiêu đề và đoạn văn */
+}
+
+.card-info p {
+  font-size: 0.9em; /* Giảm kích thước chữ cho năm */
+  color: #ccc; /* Màu chữ nhạt hơn cho năm */
+  margin: 0; /* Loại bỏ khoảng cách mặc định */
+}
+
